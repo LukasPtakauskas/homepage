@@ -3,20 +3,48 @@
 <head>
   <title>Home</title>
   <style>
-    body{
+
+  /*some globals*/
+  body{
     background-color:#d0aaf9;
     }
-    h1{
+  h1{
     text-align:center;
     }
-    .wrap-all{
+    img{
+      height: 100px;
+      width: 100px;
+    }
+    iframe{
+      width:100px;
+      height:100px;
+    }
+    /*classes*/
+  .wrap-all{
+      width:50%;
       border: 1px solid grey;
       background-color:#c6c7f8;
       display:grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin:15px 50px 2px 50px;
+      margin:0 auto;
       grid-gap: 20px;
     }
+    @media only screen and (max-width: 960px) and (min-width:520px)
+    {
+      .wrap-all{
+        width:80%;
+        grid-gap:5px;
+      }
+    }
+    @media only screen and (max-width: 600px){
+      .wrap-all{
+        width:98%;
+        grid-template-columns:1fr 1fr ;
+      }
+
+
+    }
+
     .element{
       text-align: center;
       border-radius: 5px;
@@ -28,14 +56,15 @@
     .bigText{
       font-size: 50px;
     }
-    img{
-      height: 100px;
-      width: 100px;
+    /*idees*/
+    #github{
+
+        background-color: #f9f9f9;
+
     }
-    iframe{
-      width:100px;
-      height:100px;
-    }
+
+
+
 
   </style>
 </head>
@@ -46,8 +75,7 @@
   <section class="wrap-all" id="goodies">
 
     <div class="element" id="24/7">
-      <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
+      <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&loop=1&autopause=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="element" id ="codepen">
