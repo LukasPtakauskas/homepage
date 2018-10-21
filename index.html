@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body{
+    background-color:#d0aaf9;
+    }
+    h1{
+    text-align:center;
+    }
+    .wrap-all{
+      border: 1px solid grey;
+      background-color:#c6c7f8;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin:15px 50px 2px 50px;
+      grid-gap: 20px;
+    }
+    .element{
+      text-align: center;
+      border-radius: 5px;
+      background-color:#ccf5f5;
+      border:5px solid #252525;
+      padding:2px;
+      margin:2px 2px 2px 2px;
+    }
+    .bigText{
+      font-size: 50px;
+    }
+    img{
+      height: 100px;
+      width: 100px;
+    }
+    iframe{
+      width:100px;
+      height:100px;
+    }
+
+  </style>
+</head>
+<body>
+  <a href="http://localhost/">
+    <h1>Welcome</h1>
+  </a>
+  <section class="wrap-all" id="goodies">
+
+    <div class="element" id="24/7">
+      <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="element" id ="codepen">
+      <a href="http://www.codepen.io/">
+       <img src="codepen.png" height="200" width="200">
+     </a>
+    </div>
+
+    <div class="element" id="fcc">
+      <a href="http://www.freecodecamp.org/">
+       <img src="fcc.svg" height="200" width="200">
+     </a>
+    </div>
+
+    <div class="element" id="donjon">
+      <!--
+      <a href="https://rpg.rem.uz/Dungeons%20%26%20Dragons/D%26D%205th%20Edition/Core/">
+      -->
+      <a href="https://donjon.bin.sh/">
+        <img src="dnd.png" height = "200" width="200">
+      </a>
+    </div>
+
+    <div class="element" id="4chan">
+      <a href="http://boards.4chan.org/gd/catalog">
+        <img src="gd-logo.png">
+        <!--<p class="bigText">/gd/</p>-->
+      </a>
+    </div>
+
+    <div class="element" id="w3schools">
+      <a href="https://www.w3schools.com/">
+        <img src = "w3-logo.png" >
+      </a>
+    </div>
+
+    <div class="element" id="acm">
+      <a href="http://acm.vgtu.lt">
+        <img src="vgtu-logo.png">
+      </a>
+    </div>
+
+    <div class="element" id="codewars">
+      <a href="https://www.codewars.com/dashboard">
+        <img src="codewars.png" height="200" width="200" >
+      </a>
+    </div>
+
+    <div class="element" id="twitch">
+      <a href = "https://www.twitch.tv/directory/game/PlanetSide%202">
+        <img src="twitch.png">
+      </a>
+    </div>
+
+    <div class="element"  id="github">
+      <a href = "https://github.com/LukasPtakauskas?tab=repositories">
+        <img src="github.png">
+      </a>
+    </div>
+
+    <div class="element"></div>
+
+    <div class="element"></div>
+
+  </section>
+</body>
+</html>
