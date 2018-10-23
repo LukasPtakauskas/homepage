@@ -7,6 +7,11 @@
   /*some globals*/
   body{
     background-color:#d0aaf9;
+
+
+    /*   will be "on top", if browser supports it */
+    background-image: linear-gradient(45deg,#e1bbff, #c090e0);
+
     }
   h1{
     text-align:center;
@@ -16,14 +21,13 @@
       width: 100px;
     }
     iframe{
-      width:100px;
-      height:100px;
+      width:100%;
+      height:auto;
     }
     /*classes*/
   .wrap-all{
       width:50%;
       border: 1px solid grey;
-      background-color:#c6c7f8;
       display:grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin:0 auto;
@@ -41,26 +45,22 @@
         width:98%;
         grid-template-columns:1fr 1fr ;
       }
-
-
     }
 
     .element{
       text-align: center;
       border-radius: 5px;
-      background-color:#ccf5f5;
-      border:5px solid #252525;
       padding:2px;
       margin:2px 2px 2px 2px;
     }
-    .bigText{
-      font-size: 50px;
+    .music{
+      background-color:#ccf5f5;
+      text-align: center;
+      margin-top: 200px;
     }
-    /*idees*/
-    #github, #stackoverflow{
-
+    /* id */
+    #github, #stackoverflow, #aws, #unsplash{
         background-color: #f9f9f9;
-
     }
 
 
@@ -68,15 +68,13 @@
 
   </style>
 </head>
+
+
 <body>
   <a href="http://localhost/">
     <h1>Welcome</h1>
   </a>
   <section class="wrap-all" id="goodies">
-
-    <div class="element" id="24/7">
-      <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&loop=1&autopause=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
 
     <div class="element" id ="codepen">
       <a href="http://www.codepen.io/">
@@ -84,31 +82,47 @@
      </a>
     </div>
 
-    <div class="element" id="fcc">
-      <a href="http://www.freecodecamp.org/">
-       <img src="fcc.svg" height="200" width="200">
-     </a>
-    </div>
-
-    <div class="element" id="donjon">
-      <!--
-      <a href="https://rpg.rem.uz/Dungeons%20%26%20Dragons/D%26D%205th%20Edition/Core/">
-      -->
-      <a href="https://donjon.bin.sh/">
-        <img src="dnd.png" height = "200" width="200">
-      </a>
-    </div>
-
-    <div class="element" id="4chan">
-      <a href="http://boards.4chan.org/gd/catalog">
-        <img src="gd-logo.png">
-        <!--<p class="bigText">/gd/</p>-->
-      </a>
-    </div>
-
     <div class="element" id="w3schools">
       <a href="https://www.w3schools.com/">
         <img src = "w3-logo.png" >
+      </a>
+    </div>
+
+    <div class="element" id="tricks">
+      <a href = "http://www.css-tricks.com/">
+        <img src="csstricks.png">
+      </a>
+    </div>
+
+    <div class="element" id="fcc">
+      <a href="http://www.freecodecamp.org/">
+        <img src="fcc.svg" height="200" width="200">
+      </a>
+    </div>
+
+
+    <div class="element"  id="github">
+      <a href = "https://github.com/LukasPtakauskas?tab=repositories">
+        <img src="github.png">
+      </a>
+    </div>
+
+    <div class="element" id="stackoverflow">
+      <a href = "https://stackoverflow.com/">
+        <img src="stackoverflow.png">
+      </a>
+    </div>
+
+
+    <div class="element" id="aws">
+      <a href = "https://eu-central-1.console.aws.amazon.com/">
+        <img src="aws.jpg">
+      </a>
+    </div>
+
+    <div class="element" id="unsplash">
+      <a href = "http://www.unsplash.com/">
+        <img src="unsplash.png">
       </a>
     </div>
 
@@ -130,17 +144,7 @@
       </a>
     </div>
 
-    <div class="element"  id="github">
-      <a href = "https://github.com/LukasPtakauskas?tab=repositories">
-        <img src="github.png">
-      </a>
-    </div>
 
-    <div class="element" id="stackoverflow">
-      <a href = "https://stackoverflow.com/">
-        <img src="stackoverflow.png">
-      </a>
-    </div>
 
     <div class="element" id="fontsgoogle">
       <a href = "https://www.fonts.google.com/">
@@ -149,18 +153,8 @@
     </div>
 
 
-    <div class="element" id="aws">
-      <a href = "https://eu-central-1.console.aws.amazon.com/">
-        <img src="aws.jpg">
-      </a>
-    </div>
 
 
-    <div class="element" id="tricks">
-      <a href = "http://www.css-tricks.com/">
-        <img src="csstricks.png">
-      </a>
-    </div>
 
 
     <div class="element" id="icons">
@@ -172,7 +166,7 @@
 
     <div class="element" id="linkedin">
       <a href = "http://www.linkedin.com/">
-        <img src="linkedin.png">
+        <img src="linkdin.png">
       </a>
     </div>
 
@@ -184,82 +178,12 @@
     </div>
 
 
-    <div class="element" id="unsplash">
-      <a href = "http://www.unsplash.com/">
-        <img src="unsplash.png">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
-
-
-    <div class="element">
-      <a href = "">
-        <img src="">
-      </a>
-    </div>
 
   </section>
+
+  <div class="music" id="24/7">
+    <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&loop=1&autopause=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
 </body>
 </html>
