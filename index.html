@@ -17,8 +17,9 @@
     text-align:center;
     }
     img{
-      height: 100px;
       width: 100px;
+      height: auto;
+
     }
     iframe{
       width:100%;
@@ -26,6 +27,7 @@
     }
     /*classes*/
   .wrap-all{
+      padding:20px;
       width:50%;
       border: 1px solid grey;
       display:grid;
@@ -50,8 +52,6 @@
     .element{
       text-align: center;
       border-radius: 5px;
-      padding:2px;
-      margin:2px 2px 2px 2px;
     }
     .music{
       background-color:#ccf5f5;
@@ -59,13 +59,37 @@
       margin-top: 200px;
     }
     /* id */
-    #github, #stackoverflow, #aws, #unsplash{
-        background-color: #f9f9f9;
+    #github, #stackoverflow, #aws, #unsplash, #acm, #linkdin{
+        background-color: #fdfbfc;
     }
+    #fcc{
+      background-image:linear-gradient(#FFb056, #dd9936);
+    }
+    #twitch{
+      background-color: #6441A5;
+    }
+    #w3schools{
+      background-color:#4CB050;
+    }
+    #codepen{
+      background-image:linear-gradient(#C9C9C9,#0ff);
+    }
+    #codewars{
+      background-color: #102;
+    }
+    #fontsgoogle{
+      background-color: #F85057;
+    }
+    #icons{
+      background-color: #1D9E75;
+    }
+    #pramp{
+      background-color: #FDFEFE;
+    }
+    #tricks{
+      background-color: #DF8900;
 
-
-
-
+    }
   </style>
 </head>
 
@@ -126,11 +150,7 @@
       </a>
     </div>
 
-    <div class="element" id="acm">
-      <a href="http://acm.vgtu.lt">
-        <img src="vgtu-logo.png">
-      </a>
-    </div>
+
 
     <div class="element" id="codewars">
       <a href="https://www.codewars.com/dashboard">
@@ -164,12 +184,17 @@
     </div>
 
 
-    <div class="element" id="linkedin">
+    <div class="element" id="linkdin">
       <a href = "http://www.linkedin.com/">
         <img src="linkdin.png">
       </a>
     </div>
-
+    
+    <div class="element" id="acm">
+      <a href="http://acm.vgtu.lt">
+        <img src="vgtu-logo.png">
+      </a>
+    </div>
 
     <div class="element" id="pramp">
       <a href = "http://www.pramp.com/">
