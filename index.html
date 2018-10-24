@@ -7,34 +7,53 @@
   /*some globals*/
   body{
     background-color:#d0aaf9;
-
-
     /*   will be "on top", if browser supports it */
     background-image: linear-gradient(45deg,#e1bbff, #c090e0);
-
     }
+
   h1{
     text-align:center;
     }
+
     img{
       width: 100px;
       height: auto;
 
+
     }
+    a {
+      height: 128px;
+      width:128px;
+    }
+    div.element > img{
+      margin: 0;
+      position: relative;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+
+
+    }
+
     iframe{
       width:100%;
       height:auto;
     }
     /*classes*/
   .wrap-all{
-      padding:20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
       width:50%;
       border: 1px solid grey;
       display:grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin:0 auto;
-      grid-gap: 20px;
+      grid-column-gap: 5px;
+      grid-row-gap: 20px;
+      justify-content: space-between;
     }
+
     @media only screen and (max-width: 960px) and (min-width:520px)
     {
       .wrap-all{
@@ -50,9 +69,13 @@
     }
 
     .element{
+      width:128px;
+      height: 128px;
       text-align: center;
       border-radius: 5px;
+
     }
+
     .music{
       background-color:#ccf5f5;
       text-align: center;
@@ -76,6 +99,7 @@
     }
     #codewars{
       background-color: #102;
+      overflow: auto;
     }
     #fontsgoogle{
       background-color: #FF5252;
@@ -95,12 +119,12 @@
 
 
 <body>
-  <a href="http://localhost/">
-    <h1>Welcome</h1>
-  </a>
+
+    <h1><a href="http://localhost/">Welcome to the</a> <a href="http://www.vilisvonka.co.uk/">Chocolate factory</a></h1>
+
   <section class="wrap-all" id="goodies">
 
-    <a href="http://www.codepen.io/">
+  <a href="http://www.codepen.io/">
     <div class="element" id ="codepen">
        <img src="codepen.png" height="200" width="200">
     </div>
