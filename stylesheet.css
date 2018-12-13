@@ -1,0 +1,197 @@
+/*some globals*/
+body {
+  background-color: #d0aaf9;
+  /*   will be "on top", if browser supports it */
+  background-image: linear-gradient(45deg, #e1bbff, #c090e0);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+a {
+  font-size: 20px;
+  height: 128px;
+  width: 128px;
+  transition: font-size ease-in-out 500ms;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* unvisited link */
+a:link {
+  color: darkred;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+div.element>img {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+div.element {
+  box-shadow: 0px 0px -1px -1px rgba(255, 255, 255, 0);
+  transition: box-shadow ease-in-out 500ms;
+}
+
+div.element:hover {
+  box-shadow: 0px 0px 5px 5px rgba(23, 23, 23, 1);
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+/*classes*/
+.preciuos_sites {
+  text-align: center;
+}
+
+.wrap-all {
+  padding: 20px;
+  width: 612px;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: 128px 128px 128px 128px;
+  margin: 0 auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 960px) and (min-width:537px) {
+  .wrap-all {
+    width: 537px;
+    grid-gap: 5px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  .wrap-all {
+    width: 301px;
+    grid-template-columns: 128px 128px;
+  }
+}
+
+.element {
+  width: 128px;
+  height: 128px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.music {
+  background-color: #ccf5f5;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* id */
+#github,
+#stackoverflow,
+#aws,
+#unsplash,
+#acm,
+#linkdin,
+#crypto {
+  background-color: #fdfbfc;
+}
+
+#fcc {
+  background-image: linear-gradient(#FFb056, #dd9936);
+}
+
+#twitch {
+  background-color: #6441A5;
+}
+
+#w3schools {
+  background-color: #4CB050;
+}
+
+#codepen {
+  background-image: linear-gradient(#C9C9C9, #0ff);
+}
+
+#codewars {
+  background-color: #102;
+  overflow: auto;
+}
+
+#fontsgoogle {
+  background-color: #FF5252;
+}
+
+#icons {
+  background-color: #1D9E75;
+}
+
+#pramp {
+  background-color: #FDFEFE;
+}
+
+#tricks {
+  background-color: #DF8900;
+}
+
+/*search*/
+#searchtpb {
+  display: grid;
+  place-items: center;
+}
+
+#answer {
+  text-align: right;
+  margin-right: 0px;
+  padding-right: 8px;
+
+  border: 1px dotted #999;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+#right_tpb {
+  margin-left: 0px;
+  border: 1px dotted #999;
+  border-radius: 0;
+  -webkit-appearance: none;
+}

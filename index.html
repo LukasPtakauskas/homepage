@@ -1,289 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta name="author" content="Lukas Ptakauskas">
+  <link rel="stylesheet" href="stylesheet.css">
   <title>Home</title>
-  <style>
 
-  /*some globals*/
-  body{
-    background-color:#d0aaf9;
-    /*   will be "on top", if browser supports it */
-    background-image: linear-gradient(45deg,#e1bbff, #c090e0);
-    }
-
-  h1{
-    text-align:center;
-    }
-
-    p{
-      margin:0 auto;
-      text-align: center;
-    }
-
-    img{
-      width: 100px;
-      height: auto;
-
-
-    }
-    a {
-      font-size:20px;
-
-      height: 128px;
-      width:128px;
-    }
-    /* unvisited link */
-    a:link {
-      color: darkred;
-          text-decoration: none;
-    }
-
-        /* visited link */
-    a:visited {
-       color: darkgreen;
-           text-decoration: none;
-    }
-
-    /* mouse over link */
-    a:hover {
-      font-size:25px;
-      border: 2px solid black;
-           text-decoration: none;
-    }
-
-    /* selected link */
-    a:active {
-       color: blue;
-    }
-
-
-    div.element > img{
-      margin: 0;
-      position: relative;
-      top: 50%;
-      left: 40%;
-      transform: translate(-50%, -50%);
-    }
-
-    iframe{
-      width:100%;
-      height:auto;
-    }
-    /*classes*/
-  .preciuos_sites{
-    text-align:center;
-  }
-  .wrap-all{
-      padding:20px;
-      width:612px;
-      border: 1px solid grey;
-      display:grid;
-      grid-template-columns: 128px 128px 128px 128px;
-      margin:0 auto;
-      grid-column-gap: 5px;
-      grid-row-gap: 20px;
-      justify-content: space-between;
-    }
-
-    @media only screen and (max-width: 960px) and (min-width:537px)
-    {
-      .wrap-all{
-        width:537px;
-        grid-gap:5px;
-        padding:5px;
-      }
-    }
-    @media only screen and (max-width: 537px){
-      .wrap-all{
-        width:301px;
-        grid-template-columns:128px 128px ;
-      }
-    }
-
-    .element{
-      width:128px;
-      height: 128px;
-      text-align: center;
-      border-radius: 5px;
-
-    }
-
-    .music{
-      background-color:#ccf5f5;
-      text-align: center;
-      margin-top: 200px;
-    }
-    /* id */
-    #github, #stackoverflow, #aws, #unsplash, #acm, #linkdin , #crypto{
-        background-color: #fdfbfc;
-    }
-    #fcc{
-      background-image:linear-gradient(#FFb056, #dd9936);
-    }
-    #twitch{
-      background-color: #6441A5;
-    }
-    #w3schools{
-      background-color:#4CB050;
-    }
-    #codepen{
-      background-image:linear-gradient(#C9C9C9,#0ff);
-    }
-    #codewars{
-      background-color: #102;
-      overflow: auto;
-    }
-    #fontsgoogle{
-      background-color: #FF5252;
-    }
-    #icons{
-      background-color: #1D9E75;
-    }
-    #pramp{
-      background-color: #FDFEFE;
-    }
-    #tricks{
-      background-color: #DF8900;
-
-    }
-  </style>
 </head>
-
 
 <body>
 
 
   <section class="wrap-all" id="goodies">
 
-  <a href="http://www.codepen.io/">
-    <div class="element" id ="codepen">
-       <img src="codepen.png" height="200" width="200">
-    </div>
-  </a>
+    <a href="http://www.codepen.io/">
+      <div class="element" id="codepen">
+        <img src="codepen.png" height="200" width="200">
+      </div>
+    </a>
 
-  <a href="https://www.w3schools.com/">
-    <div class="element" id="w3schools">
-        <img src = "w3-logo.png" >
-    </div>
-  </a>
+    <a href="https://www.w3schools.com/">
+      <div class="element" id="w3schools">
+        <img src="w3-logo.png">
+      </div>
+    </a>
 
-  <a href = "http://www.css-tricks.com/">
-    <div class="element" id="tricks">
+    <a href="http://www.css-tricks.com/">
+      <div class="element" id="tricks">
         <img src="csstricks.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <a href="http://www.freecodecamp.org/">
-    <div class="element" id="fcc">
+    <a href="http://www.freecodecamp.org/">
+      <div class="element" id="fcc">
         <img src="fcc.svg" height="200" width="200">
-    </div>
-  </a>
+      </div>
+    </a>
 
 
-  <a href = "https://github.com/LukasPtakauskas?tab=repositories">
-    <div class="element"  id="github">
+    <a href="https://github.com/LukasPtakauskas?tab=repositories">
+      <div class="element" id="github">
         <img src="github.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <a href = "https://stackoverflow.com/">
-    <div class="element" id="stackoverflow">
+    <a href="https://stackoverflow.com/">
+      <div class="element" id="stackoverflow">
         <img src="stackoverflow.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
 
-  <a href = "https://eu-central-1.console.aws.amazon.com/">
-    <div class="element" id="aws">
+    <a href="https://eu-central-1.console.aws.amazon.com/">
+      <div class="element" id="aws">
         <img src="aws.jpg">
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <a href = "http://www.unsplash.com/">
-    <div class="element" id="unsplash">
+    <a href="http://www.unsplash.com/">
+      <div class="element" id="unsplash">
         <img src="unsplash.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
 
 
-  <a href="https://www.codewars.com/dashboard">
-    <div class="element" id="codewars">
-        <img src="codewars.png" height="200" width="200" >
-    </div>
-  </a>
+    <a href="https://www.codewars.com/dashboard">
+      <div class="element" id="codewars">
+        <img src="codewars.png" height="200" width="200">
+      </div>
+    </a>
 
-  <a href = "https://www.twitch.tv/directory/game/PlanetSide%202">
-    <div class="element" id="twitch">
+    <a href="https://www.twitch.tv/directory/game/PlanetSide%202">
+      <div class="element" id="twitch">
         <img src="twitch.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
 
 
-  <a href = "https://www.fonts.google.com/">
-    <div class="element" id="fontsgoogle">
+    <a href="https://www.fonts.google.com/">
+      <div class="element" id="fontsgoogle">
         <img src="fonts.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
 
 
 
 
 
-  <a href = "http://www.fontawesome.io/">
-    <div class="element" id="icons">
-        <img src= "fontawesome.png">
-    </div>
-  </a>
+    <a href="http://www.fontawesome.io/">
+      <div class="element" id="icons">
+        <img src="fontawesome.png">
+      </div>
+    </a>
 
 
-  <a href = "http://www.linkedin.com/">
-    <div class="element" id="linkdin">
+    <a href="http://www.linkedin.com/">
+      <div class="element" id="linkdin">
         <img src="linkdin.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <a href="http://acm.vgtu.lt">
-    <div class="element" id="acm">
+    <a href="http://acm.vgtu.lt">
+      <div class="element" id="acm">
         <img src="vgtu-logo.png">
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <a href = "http://www.pramp.com/">
-    <div class="element" id="pramp">
-        <img src= "pramp.png">
-    </div>
-  </a>
-  <a href = "https://www.cryptohopper.com/">
-    <div class="element" id="crypto">
-        <img src= "crypto.png">
-    </div>
-  </a>
-
-
-
-
-
+    <a href="http://www.pramp.com/">
+      <div class="element" id="pramp">
+        <img src="pramp.png">
+      </div>
+    </a>
+    <a href="https://www.cryptohopper.com/">
+      <div class="element" id="crypto">
+        <img src="crypto.png">
+      </div>
+    </a>
   </section>
-  <h1><a href="http://localhost/">Welcome to the</a> <a href="http://www.vilisvonka.co.uk/">Chocolate factory</a></h1>
+
+  <section id="links">
+  <h1><a href="http://localhost/">Welcome Home!</a> <a href="http://www.vilisvonka.co.uk/">Wanna go to the Chocolate factory?</a></h1>
   <div class="preciuos_sites">
     <p>
       <ul>
-        <li><a href="http://www.vilisvonka.co.uk"> I own a domain, heh</a></li>
+        <li><a href="http://www.vilisvonka.co.uk"> I own a domain</a></li>
         <li><a href="http://www.chocolatefactory.co.uk"> to the chocolate factory</a></li>
-        <li><a href="http://www.rpgwithlamp.fantasy">remember those adventures?</a></li>
+        <li><a href="http://www.rpgwithlamp.fantasy">remember the adventures?</a></li>
         <li><a href="http://www.testinglampsgame.friends">test my game, friends</a></li>
         <li><a href="http://www.gamedev.info">gamedev stuff</a></li>
-
       </ul>
     </p>
   </div>
+</section>
 
+<section id="searchtpb">
+<form onSubmit="return checkAnswer();">
+<input id="answer" type="text" maxlength="55" class="box" autofocus />
+<input id="right_tpb"type="submit" class="submit" value="SUBMIT" />
+</form>
+<script>
+function checkAnswer(){
+    var response = document.getElementById('answer').value;
+    console.log(response);
+    window.location.href = "https://www.thepiratebay.cr/search/"+response;
+/*
+    if (response == "correctanswer")
+        location = 'http://jsbin.com/ukifoh/1'; // 'right.html';
+    else
+        location = 'http://jsbin.com/ukifoh/2'; // 'wrong.html';
+        */
+    return false;
+
+}
+</script>
+</section>
+
+
+<section id="autoplay">
   <div class="music" id="24/7">
     <iframe src="https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&loop=1&autopause=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
+</section>
 
 </body>
+
 </html>
